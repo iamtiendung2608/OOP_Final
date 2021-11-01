@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\bin\Debug\netcoreapp3.1\TreeAlgoVisualize.exe
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\bin\Debug\netcoreapp3.1\TreeAlgoVisualize.deps.json
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\bin\Debug\netcoreapp3.1\TreeAlgoVisualize.runtimeconfig.json
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\bin\Debug\netcoreapp3.1\TreeAlgoVisualize.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\bin\Debug\netcoreapp3.1\TreeAlgoVisualize.dll
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\bin\Debug\netcoreapp3.1\TreeAlgoVisualize.pdb
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.Form1.resources
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.AssemblyInfo.cs
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.dll
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.pdb
+C:\Users\Admin\source\repos\TreeAlgoVisualize\TreeAlgoVisualize\obj\Debug\netcoreapp3.1\TreeAlgoVisualize.genruntimeconfig.cache
