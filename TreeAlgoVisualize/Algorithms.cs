@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Windows.Forms.Control;
 
 namespace TreeAlgoVisualize
 {
     interface Algorithms
     {
-        void Insert(int val);
+        void Insert(ref TreeNode Result, TreeNode S, ControlCollection k);
         void Delete(int val);
-        void Rank(int val);
-        void Ceiling(int val);
-        void Travelsal();
+        void Rank(TreeNode head,int val, ControlCollection k);
+        void Ceiling(TreeNode head, int val, ControlCollection k);
+        void Travelsal(TreeNode node, ControlCollection k);
+        int MaxValue(TreeNode node, ControlCollection k);
+        int MinValue(TreeNode node, ControlCollection k);
     }
 }

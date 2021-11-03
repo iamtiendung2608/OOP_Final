@@ -38,7 +38,7 @@ namespace TreeAlgoVisualize
             this.Rank = new System.Windows.Forms.TextBox();
             this.RankButton = new System.Windows.Forms.Button();
             this.CeilingButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Ceiling = new System.Windows.Forms.TextBox();
             this.FindMax = new System.Windows.Forms.Button();
             this.FindMin = new System.Windows.Forms.Button();
             this.Travelsal = new System.Windows.Forms.Button();
@@ -106,6 +106,7 @@ namespace TreeAlgoVisualize
             this.RankButton.TabIndex = 6;
             this.RankButton.Text = "Rank";
             this.RankButton.UseVisualStyleBackColor = true;
+            this.RankButton.Click += new System.EventHandler(this.RankButton_Click);
             // 
             // CeilingButton
             // 
@@ -116,15 +117,16 @@ namespace TreeAlgoVisualize
             this.CeilingButton.TabIndex = 7;
             this.CeilingButton.Text = "Ceiling";
             this.CeilingButton.UseVisualStyleBackColor = true;
+            this.CeilingButton.Click += new System.EventHandler(this.CeilingButton_Click);
             // 
-            // textBox1
+            // Ceiling
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(322, 444);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(97, 35);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Ceiling.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Ceiling.Location = new System.Drawing.Point(322, 444);
+            this.Ceiling.Name = "Ceiling";
+            this.Ceiling.Size = new System.Drawing.Size(97, 35);
+            this.Ceiling.TabIndex = 8;
+            this.Ceiling.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // FindMax
             // 
@@ -135,6 +137,7 @@ namespace TreeAlgoVisualize
             this.FindMax.TabIndex = 9;
             this.FindMax.Text = "Max";
             this.FindMax.UseVisualStyleBackColor = true;
+            this.FindMax.Click += new System.EventHandler(this.FindMax_Click);
             // 
             // FindMin
             // 
@@ -145,6 +148,7 @@ namespace TreeAlgoVisualize
             this.FindMin.TabIndex = 10;
             this.FindMin.Text = "Min";
             this.FindMin.UseVisualStyleBackColor = true;
+            this.FindMin.Click += new System.EventHandler(this.FindMin_Click);
             // 
             // Travelsal
             // 
@@ -155,6 +159,7 @@ namespace TreeAlgoVisualize
             this.Travelsal.TabIndex = 11;
             this.Travelsal.Text = "Print";
             this.Travelsal.UseVisualStyleBackColor = true;
+            this.Travelsal.Click += new System.EventHandler(this.Travelsal_Click);
             // 
             // Form1
             // 
@@ -164,7 +169,7 @@ namespace TreeAlgoVisualize
             this.Controls.Add(this.Travelsal);
             this.Controls.Add(this.FindMin);
             this.Controls.Add(this.FindMax);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Ceiling);
             this.Controls.Add(this.CeilingButton);
             this.Controls.Add(this.RankButton);
             this.Controls.Add(this.Rank);
@@ -189,7 +194,7 @@ namespace TreeAlgoVisualize
         private System.Windows.Forms.TextBox Rank;
         private System.Windows.Forms.Button RankButton;
         private System.Windows.Forms.Button CeilingButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Ceiling;
         private System.Windows.Forms.Button FindMax;
         private System.Windows.Forms.Button FindMin;
         private System.Windows.Forms.Button Travelsal;
