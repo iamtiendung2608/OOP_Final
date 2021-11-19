@@ -13,18 +13,18 @@ namespace TreeAlgoVisualize
         public static Pen DrawPen = new Pen(Color.Red, 4);
         public static Pen DeletePen = new Pen(Color.White, 6);
         public static ArrayList S = new ArrayList();
-        public static Graphics G;
+        public static Graphics DrawGraphics;
         public static Label DeleteLabel;
         public static void SetUpDrawing(Graphics g)
         {
-            G = g;
+            DrawGraphics = g;
         }
         public static void goLeft(TreeNode node,Label Source)
         {
             if (node == null)
                 return;
             DeleteLabel = node.getLabel();
-            DrawComponent.DeleteLine(Source, DeleteLabel, G);
+            DrawComponent.DeleteLine(Source, DeleteLabel, DrawGraphics);
             S.Add(new DrawComponent(Source, node.getLabel()));
             goLeft(node.left,node.getLabel());
             goLeft(node.right,node.getLabel());
@@ -35,7 +35,7 @@ namespace TreeAlgoVisualize
             if (node == null)
                 return;
             DeleteLabel = node.getLabel();
-            DrawComponent.DeleteLine(Source, DeleteLabel, G);
+            DrawComponent.DeleteLine(Source, DeleteLabel, DrawGraphics);
             S.Add(new DrawComponent(Source, node.getLabel()));
             goRight(node.left,node.getLabel());
             goRight(node.right,node.getLabel());
