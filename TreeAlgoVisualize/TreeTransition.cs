@@ -8,23 +8,17 @@ using System.Windows.Forms;
 
 namespace TreeAlgoVisualize
 {
-    class TreeTransition
+    class TreeTransition:DrawTool
     {
-        public static Pen DrawPen = new Pen(Color.Red, 4);
-        public static Pen DeletePen = new Pen(Color.White, 6);
         public static ArrayList S = new ArrayList();
-        public static Graphics DrawGraphics;
         public static Label DeleteLabel;
-        public static void SetUpDrawing(Graphics g)
-        {
-            DrawGraphics = g;
-        }
+
         public static void goLeft(TreeNode node,Label Source)
         {
             if (node == null)
                 return;
             DeleteLabel = node.getLabel();
-            DrawComponent.DeleteLine(Source, DeleteLabel, DrawGraphics);
+            DrawComponent.DeleteLine(Source, DeleteLabel);
             S.Add(new DrawComponent(Source, node.getLabel()));
             goLeft(node.left,node.getLabel());
             goLeft(node.right,node.getLabel());
@@ -35,7 +29,7 @@ namespace TreeAlgoVisualize
             if (node == null)
                 return;
             DeleteLabel = node.getLabel();
-            DrawComponent.DeleteLine(Source, DeleteLabel, DrawGraphics);
+            DrawComponent.DeleteLine(Source, DeleteLabel);
             S.Add(new DrawComponent(Source, node.getLabel()));
             goRight(node.left,node.getLabel());
             goRight(node.right,node.getLabel());
@@ -54,18 +48,17 @@ namespace TreeAlgoVisualize
                 Task.Delay(100).Wait();
             }
         }
-        public static void ReDraw(Graphics g)
+        public static void ReDraw()
         {
-            Graphics G = g;
             foreach (DrawComponent i in S)
             {
-                DrawComponent.Draw(i.start, i.end, G);
+                DrawComponent.Draw(i.start, i.end);
             }
             S.Clear();
         }
-        public static void DeleteLineBetweenComponent(Graphics g, DrawComponent leaf)
+        public static void DeleteLineBetweenComponent(DrawComponent leaf)
         {
-            DrawComponent.DeleteLine(leaf.start, leaf.end, g);
+            DrawComponent.DeleteLine(leaf.start, leaf.end);
         }
     }
 }

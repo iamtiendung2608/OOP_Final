@@ -14,7 +14,7 @@ namespace TreeAlgoVisualize
         {
             this.Label = new Label();
             this.Label.ForeColor = Color.FromArgb(232, 65, 24);
-            this.Label.BackColor = Color.FromArgb(46, 204, 113);
+            this.Label.BackColor = Color.FromArgb(0, 184, 148);
             this.Label.Text = Name;
             this.Label.Name = Name;
             this.Label.Location = new Point(540, 500);

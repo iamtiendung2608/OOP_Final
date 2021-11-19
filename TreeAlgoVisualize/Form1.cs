@@ -30,13 +30,13 @@ namespace TreeAlgoVisualize
             Pos = new TreeNode(val);
             this.Controls.Add(Pos.getLabel());
             Task.Delay(500).Wait();
-            Algo.Insert(ref head, Node,this.Controls);
+            Algo.Insert(ref head, Node);
             dis = TreeTransition.get_distance(Pos.getLabel().Location, Node.getLabel().Location);
             TreeTransition.change_position(Pos, dis);
             Label Start =Database.getDrawPoint().getLabel();
             Label End = Node.getLabel();
-            DrawComponent.Draw(Start, End, g);
-            TreeTransition.ReDraw(g);
+            DrawComponent.Draw(Start, End);
+            TreeTransition.ReDraw();
             this.Controls.Remove(Pos.getLabel());
             this.Controls.Add(Node.getLabel());
             Insert.Text = "";
@@ -44,14 +44,14 @@ namespace TreeAlgoVisualize
         }
         private void Travelsal_Click(object sender, EventArgs e)
         {
-            Algo.DeleteLabel(this.Controls);
-            Algo.Travelsal(head, this.Controls);
+            Algo.DeleteLabel();
+            Algo.Travelsal(head);
         }
         private void RankButton_Click(object sender, EventArgs e)
         {
-            Algo.DeleteLabel(this.Controls);
+            Algo.DeleteLabel();
             int val = int.Parse(Rank.Text);
-            Algo.Rank(head, val, this.Controls);
+            Algo.Rank(head, val);
             if (Database.Label.Count == 0)
                 Database.NoSmall(val);
             Rank.Text = "";
@@ -59,9 +59,9 @@ namespace TreeAlgoVisualize
         }
         private void CeilingButton_Click(object sender, EventArgs e)
         {
-            Algo.DeleteLabel(this.Controls);
+            Algo.DeleteLabel();
             int val = int.Parse(Ceiling.Text);
-            Algo.Ceiling(head, val, this.Controls);
+            Algo.Ceiling(head, val);
             if (Database.Label.Count == 0)
                 Database.NoLarge(val);
             Ceiling.Text = "";
@@ -70,12 +70,12 @@ namespace TreeAlgoVisualize
 
         private void FindMax_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Max value is: "+Algo.MaxValue(head, this.Controls).ToString());
+            MessageBox.Show("Max value is: "+Algo.MaxValue(head).ToString());
         }
 
         private void FindMin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Min value is: " + Algo.MinValue(head, this.Controls).ToString());
+            MessageBox.Show("Min value is: " + Algo.MinValue(head).ToString());
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -87,7 +87,7 @@ namespace TreeAlgoVisualize
         {
             int value = int.Parse(Delete.Text);
             TreeNode Node = new TreeNode(value);
-            Algo.Delete(ref head, Node, this.Controls);
+            Algo.Delete(ref head, Node);
             Delete.Text = "";
             Delete.Focus();
         }
@@ -95,10 +95,7 @@ namespace TreeAlgoVisualize
         {
             g = this.CreateGraphics();
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            Database.setGraphics(g);
-            TreeTransition.SetUpDrawing(g);
-            SearchTree.setControls(this.Controls);
-            DeleteComponent.CreateDrawGraphics(g);
+            DrawTool.SetUpDrawing(this.Controls, g);
         }
         
        
