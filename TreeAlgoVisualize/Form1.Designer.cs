@@ -50,7 +50,7 @@ namespace TreeAlgoVisualize
             // Insert
             // 
             this.Insert.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Insert.Location = new System.Drawing.Point(72, 466);
+            this.Insert.Location = new System.Drawing.Point(104, 572);
             this.Insert.Name = "Insert";
             this.Insert.Size = new System.Drawing.Size(79, 35);
             this.Insert.TabIndex = 0;
@@ -59,7 +59,7 @@ namespace TreeAlgoVisualize
             // Delete
             // 
             this.Delete.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Delete.Location = new System.Drawing.Point(72, 525);
+            this.Delete.Location = new System.Drawing.Point(104, 631);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(79, 35);
             this.Delete.TabIndex = 1;
@@ -74,7 +74,7 @@ namespace TreeAlgoVisualize
             this.InsertButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InsertButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.InsertButton.ForeColor = System.Drawing.Color.White;
-            this.InsertButton.Location = new System.Drawing.Point(178, 466);
+            this.InsertButton.Location = new System.Drawing.Point(210, 572);
             this.InsertButton.Name = "InsertButton";
             this.InsertButton.Size = new System.Drawing.Size(163, 35);
             this.InsertButton.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace TreeAlgoVisualize
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DeleteButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteButton.Location = new System.Drawing.Point(179, 525);
+            this.DeleteButton.Location = new System.Drawing.Point(211, 631);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(163, 35);
             this.DeleteButton.TabIndex = 4;
@@ -102,7 +102,7 @@ namespace TreeAlgoVisualize
             // Rank
             // 
             this.Rank.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Rank.Location = new System.Drawing.Point(386, 466);
+            this.Rank.Location = new System.Drawing.Point(418, 572);
             this.Rank.Name = "Rank";
             this.Rank.Size = new System.Drawing.Size(97, 35);
             this.Rank.TabIndex = 5;
@@ -117,7 +117,7 @@ namespace TreeAlgoVisualize
             this.RankButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RankButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RankButton.ForeColor = System.Drawing.Color.White;
-            this.RankButton.Location = new System.Drawing.Point(515, 466);
+            this.RankButton.Location = new System.Drawing.Point(547, 572);
             this.RankButton.Name = "RankButton";
             this.RankButton.Size = new System.Drawing.Size(115, 35);
             this.RankButton.TabIndex = 6;
@@ -134,7 +134,7 @@ namespace TreeAlgoVisualize
             this.CeilingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CeilingButton.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CeilingButton.ForeColor = System.Drawing.Color.White;
-            this.CeilingButton.Location = new System.Drawing.Point(515, 525);
+            this.CeilingButton.Location = new System.Drawing.Point(547, 631);
             this.CeilingButton.Name = "CeilingButton";
             this.CeilingButton.Size = new System.Drawing.Size(115, 36);
             this.CeilingButton.TabIndex = 7;
@@ -145,7 +145,7 @@ namespace TreeAlgoVisualize
             // Ceiling
             // 
             this.Ceiling.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Ceiling.Location = new System.Drawing.Point(386, 525);
+            this.Ceiling.Location = new System.Drawing.Point(418, 631);
             this.Ceiling.Name = "Ceiling";
             this.Ceiling.Size = new System.Drawing.Size(97, 35);
             this.Ceiling.TabIndex = 8;
@@ -160,7 +160,7 @@ namespace TreeAlgoVisualize
             this.FindMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindMax.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FindMax.ForeColor = System.Drawing.Color.White;
-            this.FindMax.Location = new System.Drawing.Point(677, 466);
+            this.FindMax.Location = new System.Drawing.Point(709, 572);
             this.FindMax.Name = "FindMax";
             this.FindMax.Size = new System.Drawing.Size(110, 35);
             this.FindMax.TabIndex = 9;
@@ -177,7 +177,7 @@ namespace TreeAlgoVisualize
             this.FindMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindMin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FindMin.ForeColor = System.Drawing.Color.White;
-            this.FindMin.Location = new System.Drawing.Point(677, 525);
+            this.FindMin.Location = new System.Drawing.Point(709, 631);
             this.FindMin.Name = "FindMin";
             this.FindMin.Size = new System.Drawing.Size(110, 36);
             this.FindMin.TabIndex = 10;
@@ -194,7 +194,7 @@ namespace TreeAlgoVisualize
             this.Travelsal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Travelsal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Travelsal.ForeColor = System.Drawing.Color.White;
-            this.Travelsal.Location = new System.Drawing.Point(817, 466);
+            this.Travelsal.Location = new System.Drawing.Point(849, 572);
             this.Travelsal.Name = "Travelsal";
             this.Travelsal.Size = new System.Drawing.Size(107, 93);
             this.Travelsal.TabIndex = 11;
@@ -209,13 +209,13 @@ namespace TreeAlgoVisualize
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 50);
+            this.panel1.Size = new System.Drawing.Size(1068, 50);
             this.panel1.TabIndex = 12;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(941, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(1019, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 0;
@@ -226,7 +226,7 @@ namespace TreeAlgoVisualize
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(991, 570);
+            this.ClientSize = new System.Drawing.Size(1068, 692);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Travelsal);
             this.Controls.Add(this.FindMin);
@@ -243,7 +243,7 @@ namespace TreeAlgoVisualize
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-           // this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

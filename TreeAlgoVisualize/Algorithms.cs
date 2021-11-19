@@ -8,7 +8,7 @@ namespace TreeAlgoVisualize
     interface Algorithms
     {
         void Insert(ref TreeNode Result, TreeNode S, ControlCollection k);
-        void Delete(int val);
+        void Delete(ref TreeNode Result, TreeNode S, ControlCollection k);
         void Rank(TreeNode head,int val, ControlCollection k);
         void Ceiling(TreeNode head, int val, ControlCollection k);
         void Travelsal(TreeNode node, ControlCollection k);

@@ -1,27 +1,45 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace TreeAlgoVisualize
 {
     class TreeTransition
     {
-        public static void goLeft(TreeNode node)
+        public static Pen DrawPen = new Pen(Color.Red, 4);
+        public static Pen DeletePen = new Pen(Color.White, 6);
+        public static ArrayList S = new ArrayList();
+        public static Graphics G;
+        public static Label DeleteLabel;
+        public static void SetUpDrawing(Graphics g)
         {
-            if (node == null)
-                return;
-            node.HeadGoLeft();
-            goLeft(node.left);
-            goLeft(node.right);
+            G = g;
         }
-        public static void goRight(TreeNode node)
+        public static void goLeft(TreeNode node,Label Source)
         {
             if (node == null)
                 return;
+            DeleteLabel = node.getLabel();
+            DrawComponent.DeleteLine(Source, DeleteLabel, G);
+            S.Add(new DrawComponent(Source, node.getLabel()));
+            goLeft(node.left,node.getLabel());
+            goLeft(node.right,node.getLabel());
+            node.HeadGoLeft();
+        }
+        public static void goRight(TreeNode node, Label Source)
+        {
+            if (node == null)
+                return;
+            DeleteLabel = node.getLabel();
+            DrawComponent.DeleteLine(Source, DeleteLabel, G);
+            S.Add(new DrawComponent(Source, node.getLabel()));
+            goRight(node.left,node.getLabel());
+            goRight(node.right,node.getLabel());
             node.HeadGoRight();
-            goRight(node.left);
-            goRight(node.right);
         }
         public static Point get_distance(Point pos1, Point pos2)
         {
@@ -35,6 +53,19 @@ namespace TreeAlgoVisualize
                 node1.SetPostion(Des);
                 Task.Delay(100).Wait();
             }
+        }
+        public static void ReDraw(Graphics g)
+        {
+            Graphics G = g;
+            foreach (DrawComponent i in S)
+            {
+                DrawComponent.Draw(i.start, i.end, G);
+            }
+            S.Clear();
+        }
+        public static void DeleteLineBetweenComponent(Graphics g, DrawComponent leaf)
+        {
+            DrawComponent.DeleteLine(leaf.start, leaf.end, g);
         }
     }
 }
